@@ -1,0 +1,175 @@
+header {
+    position: relative;
+}
+
+.container-box {
+    padding: 40px;
+    margin: 20px auto;
+    width: 90%;
+    background-color: #fff;
+    box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.container-box .main-box {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 100px;
+}
+
+.input-box {
+    display: grid;
+    line-height: 40px;
+    padding: 5px 0px;
+}
+
+input {
+    border: 1px solid rgba(18, 17, 17, 0.183);
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.img {
+    width: 35%;
+    height: 40px;
+}
+
+.mlogo {
+    width: 60px;
+    height: 50px;
+}
+
+.mblogo {
+    padding: 20px 0px;
+    display: flex;
+    gap: 30px;
+}
+
+.buttons {
+    background-color: green;
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    border: none;
+    margin-top: 10px;
+    height: 37.5px;
+}
+
+.buttons:hover {
+    background: none;
+    color: #000;
+    border: 1px solid rgba(18, 17, 17, 0.183);
+}
+
+.popup {
+    padding: 10px;
+    background-color: rgba(240, 239, 239, 0.749);
+    box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    display: none;
+    transition: .5s ease-in-out;
+}
+
+.popup .img-logo {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+
+.popup .img-logo .bkash {
+    position: relative;
+    left: -35%;
+    height: 100px;
+    width: 180px;
+}
+
+.popup .img-logo .nogod {
+    position: relative;
+    height: 110px;
+    width: 100px;
+}
+
+.popup .img-logo .rocket {
+    position: relative;
+    left: 20%;
+    top: 20%;
+    height: 60px;
+    width: 60px;
+}
+
+.popup .img-qr {
+    text-align: center;
+}
+
+.popup .img-qr img {
+    height: 300px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.popup .button {
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.popup .button .button-click {
+    padding: 10px 140px;
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 50px;
+    background: #ff8957;
+    height: 40px;
+}
+
+.popup .button .button-click:hover {
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.584);
+    color: #000;
+}
+
+.open-popup {
+    display: block;
+}
+
+.mobile-number {
+    line-height: 25px;
+}
+
+@media screen and (max-width: 450px) {
+    .container-box .main-box {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 40px;
+    }
+    .img {
+        width: 60%;
+        height: 40px;
+    }
+    .popup {
+        height: 400px;
+        width: 400px;
+    }
+    .popup .img-qr img {
+        height: 250px;
+        width: 250px;
+        margin: 0 auto;
+    }
+    .mobile-number {
+        line-height: 0px;
+    }
+}

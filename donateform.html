@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/844c8c7c76.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/oldagehomes.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <link rel="stylesheet" href="css/mediaoldagehomes.css" />
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/donateform.css">
+</head>
+
+<body>
+    <!-- Messanger icon section -->
+    <!-- <div id="message-icon"> -->
+    <!-- <i class="fa-solid fa-message"></i> -->
+    <!-- <i class="fa-brands fa-facebook-messenger"></i> -->
+    <!-- </div> -->
+    <!-- End of messenger icon section -->
+    <!-- This is header section -->
+    <div class="popup" id="popup">
+        <div class="img-logo">
+            <img src="images/BKash-Icon-Logo.wine.png" alt="" class="bkash">
+        </div>
+        <div class="img-qr">
+            <img src="images/qr-bkash.jpeg" alt="">
+        </div>
+        <div class="button">
+            <button type="button" onclick="closePopup()" class="button-click">
+            Ok
+            </button>
+        </div>
+    </div>
+    <div class="popup" id="popup-nogod">
+        <div class="img-logo">
+            <img src="images/Nagad-Logo.wine.png" alt="" class="nogod">
+        </div>
+        <div class="img-qr">
+            <img src="images/qr-bkash.jpeg" alt="">
+        </div>
+        <div class="button">
+            <button type="button" onclick="closePopupNogod()" class="button-click">
+            Ok
+            </button>
+        </div>
+    </div>
+    <div class="popup" id="popup-rocket">
+        <div class="img-logo">
+            <img src="images/rocket.png" alt="" class="rocket">
+        </div>
+        <div class="img-qr">
+            <img src="images/qr-bkash.jpeg" alt="">
+        </div>
+        <div class="button">
+            <button type="button" onclick="closePopupRocket()" class="button-click">
+            Ok
+            </button>
+        </div>
+    </div>
+    <header>
+        <nav>
+            <div class="left-header" id="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a
+                  >
+               <ul>
+                  <li><a href="index.html" style="color: #ff8957">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="memories.html">Memories</a></li>
+                <li><a href="oldagehomes.html">Old Age Homes</a></li>
+                </ul>
+            </div>
+            <span style="font-size: 30px; cursor: pointer" class="openbtn" onclick="openNav()">&#9776;</span
+               >
+            <div class="right-header">
+               <!-- <button class="button button-one">
+                  <a href="#" class="button-one">Sign In</a>
+                  </button> -->
+               <button class="button button-two">
+               <a href="donateform.html" class="button-two">Donate Us</a>
+               </button>
+            </div>
+         </nav>
+      </header>
+      <!-- End of the header section -->
+      <!-- card section -->
+      <div class="container-box">
+         <div class="main-box">
+            <div class="box">
+               <h1 style="text-transform: uppercase;">Donation Details</h1>
+               <form action="">
+                  <div class="input-box">
+                     <label for="">Full Name</label>
+                     <input type="text" placeholder="XXXXXXXXX">
+                  </div>
+                  <div class="input-box">
+                     <label for="">Email</label>
+                     <input type="email" placeholder="example@gmail.com">
+                  </div>
+                  <div class="input-box">
+                     <label for="">Mobile</label>
+                     <input type="number" placeholder="+8801989******">
+                  </div>
+                  <div class="input-box">
+                     <label for="">Address</label>
+                     <input type="number" placeholder="Road/village-City-Country">
+                  </div>
+                  <div class="input-box">
+                     <label for="">Old Age Home</label>
+                     <input list="homes" name="home" id="home" placeholder="প্রবীণ নিবাস">
+                     <datalist id="homes">
+                        <option value="প্রবীণ নিবাস">
+                        <option value="আপন নিবাশ">
+                        <option value="ছায়া নীড়">
+                        <option value="প্রতিজ্ঞা প্রবীণ নিবাশ">
+                        <option value="শুবার্তা ট্রাষ্ট">
+                        <option value="আল ইহসান ট্রাষ্ট">
+                        <option value="শান্তি নিবাশ">
+                        <option value="প্রশান্তির বাতিঘর">
+                     </datalist>
+                  </div>
+                  <div class="input-box">
+                  <label for="">Amount</label>
+                  <input type="number" placeholder="00000&#2547">
+                  </div>
+                  <div class="input-box">
+                  <label for="">Transaction ID (For Mobile Banking)</label>
+                  <input type="number" placeholder="#ed#deddsdf">
+                  </div>
+                  <div class="input-box">
+                  <label for="">Message</label>
+                  <input type="text" placeholder="Write a message">
+                  </div>
+                  <!-- <div class="input-box">
+                     <input type="button" value="Submit" class="buttons">
+                     </div> -->
+               </form>
+            </div>
+            <div class="box">
+            <h1 style="text-transform: uppercase;">Send Money Methods</h1>
+            <form action="">
+            <div class="input-box">
+            <label for=""><h4>Mobile Banking </h4></label>
+            <div class="mblogo">
+            <img src="images/BKash-Icon-Logo.wine.png" alt="" class="mlogo" onclick="openPopup()">
+            <img src="images/Nagad-Logo.wine.png" alt="" class="mlogo" onclick="openPopupNogod()">
+            <img src="images/rocket.png" alt="" class="mlogo" onclick="openPopupRocket()">
+            </div>
+            </div>
+            <div class="input-box">
+            <label for=""><h4>Mobile(Send Money Only)</h4></label>
+            <div class="mobile-number">
+            <p>+019898334444(Bkash)</p>
+            <p>+019898334444(Nogod)</p>
+            <p>+019898334444(Rocket)</p>
+            </div>
+            </div>
+            <div class="input-box">
+            <label for=""><h4>Accpted Cards</h4></label>
+            <img src="images/pngwing.com (1).png" alt="" class="img">
+            </div>
+            <div class="input-box">
+            <label for="">Name On Card</label>
+            <input type="text" placeholder="Mr./Mrs. XXXXXX">
+            </div>
+            <div class="input-box">
+            <label for="">
+            Card Number
+            </label>
+            <input type="number" placeholder="1111-2222-3333-4444">
+            </div>
+            <div class="input-box">
+            <label for="">Exp. Date</label>
+            <input type="month" placeholder="00/0000">
+            </div>
+            <div class="input-box">
+            <label for="">CVV</label>
+            <input type="number" placeholder="333">
+            </div>
+            </form>
+            </div>
+         </div>
+         <div class="input-box">
+         <input type="button" value="Procced" class="buttons">
+         </div>
+      </div>
+      </div>
+      <!-- end of card section -->
+      <!-- Start of footer  -->
+      <footer id="contact_us">
+      <div class="first-footer">
+      <div class="part one">
+      <div class="peragra">
+      <i class="fa-solid fa-location-dot" style="color: #fff;"></i>
+      <p>
+      Flat no:56, 1st street, Keerpakam, Guinday, Channai - 60040
+      </p>
+      </div>
+      <div class="peragra">
+      <i class="fa-solid fa-envelope" style="color:#fff"></i>
+      <p>
+      oldagehometrust@gmail.com
+      </p>
+      </div>
+      <div class="peragra">
+      <i class="fa-solid fa-phone" style="color: #fff;"></i>
+      <p>
+      +08801989824819
+      </p>
+      </div>
+      </div>
+      <div class="part two">
+      <u>
+      <h3>Our Home</h3>
+      </u>
+      <ul class="footer-menu">
+      <li><a href="index.html" style="color: #ff8957">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="memories.html">Memories</a></li>
+      <li><a href="oldagehomes.html">Old Age Homes</a></li>
+      </ul>
+      </div>
+      <div class="part three">
+      <u>
+      <h2>Newsaletter</h2>
+      </u>
+      <p style="padding: 15px 0px; font-size:13px;font-weight:lighter;">
+      Subscribe to our newsletter to get leatest updates.
+      </p>
+      <!-- <form action="" class="fo-fo">
+         <input type="email" name="" id="" placeholder="Your E-mail" style="padding: 5px ; border-radius:2px; border:none;">
+         <input type="submit" name="" id="" value="Register" class="register-btn">
+         </form> -->
+      <div class="social-links">
+      <a href="#"> <i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#" class="arrow"><i class="fa-solid fa-arrow-left"></i>Follow us </a>
+      </div>
+      </div>
+      </div>
+      <div class="last-footer">
+      <div class="rf">
+      <p>
+      Copyright&#169 2022. All rights reserved.
+      </p>
+      </div>
+      <div class="lf">
+      <a href="#">Privacy Policy </a><span> | </span> <a href="#">Terms of use</a>
+            </div>
+            </div>
+            </footer>
+            <!-- end of footer -->
+            <script src="js/main.js"></script>
+            <script>
+                let loadmorebtn = document.querySelector('#load-more');
+                let currentItem = 4;
+                loadmorebtn.onclick = () => {
+                    let boxes = [...document.querySelectorAll('.container .box-container .box')];
+                    for (var i = currentItem; i < currentItem + 4; i++) {
+                        boxes[i].style.display = 'inline-block';
+                    }
+                    currentItem += 4;
+                    if (currentItem >= boxes.length) {
+                        loadmorebtn.style.display = 'none';
+                    }
+                }
+            </script>
+            <!-- Start of Async Drift Code -->
+            <script>
+                "use strict";
+
+                ! function() {
+                    var t = window.driftt = window.drift = window.driftt || [];
+                    if (!t.init) {
+                        if (t.invoked) return void(window.console && console.error && console.error("Drift snippet included twice."));
+                        t.invoked = !0, t.methods = ["identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on"],
+                            t.factory = function(e) {
+                                return function() {
+                                    var n = Array.prototype.slice.call(arguments);
+                                    return n.unshift(e), t.push(n), t;
+                                };
+                            }, t.methods.forEach(function(e) {
+                                t[e] = t.factory(e);
+                            }), t.load = function(t) {
+                                var e = 3e5,
+                                    n = Math.ceil(new Date() / e) * e,
+                                    o = document.createElement("script");
+                                o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+                                var i = document.getElementsByTagName("script")[0];
+                                i.parentNode.insertBefore(o, i);
+                            };
+                    }
+                }();
+                drift.SNIPPET_VERSION = '0.3.1';
+                drift.load('z3rayh47vefa');
+            </script>
+            <!-- End of Async Drift Code -->
+</body>
+<script>
+    let popup = document.getElementById("popup");
+
+    function openPopup() {
+        popup.classList.add("open-popup")
+    }
+
+    function closePopup() {
+        popup.classList.remove("open-popup")
+    }
+
+    let popup_nogod = document.getElementById("popup-nogod");
+
+    function openPopupNogod() {
+        popup_nogod.classList.add("open-popup")
+    }
+
+    function closePopupNogod() {
+        popup_nogod.classList.remove("open-popup")
+    }
+
+    let popup_rocket = document.getElementById("popup-rocket");
+
+    function openPopupRocket() {
+        popup_rocket.classList.add("open-popup")
+    }
+
+    function closePopupRocket() {
+        popup_rocket.classList.remove("open-popup")
+    }
+</script>
+
+</html>

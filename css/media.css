@@ -1,0 +1,517 @@
+@media only screen and (max-width:850px) {
+    #message-icon {
+        left: 90%;
+    }
+    header nav {
+        width: 100%;
+    }
+    .sticky {
+        padding: 5px 20px;
+        background-color: #ff8957;
+    }
+    .sticky nav .left-header ul li a {
+        font-size: 12px;
+        padding: 5px;
+        color: #fff;
+    }
+    .sticky nav .right-header .button a {
+        padding: 5px 8px;
+        font-size: 12px;
+        transition: .5s ease-in-out;
+    }
+    header nav .left-header {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: -60px;
+        display: grid;
+        justify-content: left;
+    }
+    .left-header .closebtn {
+        position: absolute;
+        display: block;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    .openbtn {
+        display: block;
+        color: #fff;
+    }
+    .main-menu {
+        display: block;
+    }
+    .menu {
+        height: 2px;
+        width: 30px;
+        background-color: red;
+        display: block;
+        margin-top: 5px;
+    }
+    header nav .right-header {
+        width: 30%;
+        justify-content: center;
+    }
+    header nav .left-header ul li a {
+        padding: 5px;
+        color: #fff;
+    }
+    header nav .left-header ul {
+        display: grid;
+        position: absolute;
+        top: 10%;
+    }
+    header nav .left-header ul li a {
+        display: flex;
+        align-items: center;
+        padding: 10px 15px;
+        font-size: 1rem;
+        color: #fff;
+        position: relative;
+    }
+    header nav .left-header ul li a::after {
+        content: "";
+        position: absolute;
+        width: 0%;
+        height: 0.1rem;
+        background-color: #ff8957;
+        top: 100%;
+    }
+    header nav .left-header ul li a:hover::after {
+        width: 100%;
+        transition: 0.5s;
+    }
+    header nav .right-header .button {
+        margin: 0px 5px;
+        border: none;
+        background: none;
+    }
+    header nav .right-header .button a {
+        border: none;
+        color: #fff;
+        font-size: 0.7rem;
+        border-radius: 5px;
+        padding: 5px 10px;
+    }
+    header nav .right-header .button .button-one {
+        border: 1px solid #ff8957;
+        background: none;
+        padding: 4px 9px;
+    }
+    .sticky nav .right-header .button .button-one {
+        border: 1px solid #fff;
+        background: none;
+        padding: 4px 9px;
+    }
+    header nav .right-header .button .button-one:hover {
+        background-color: #ff8957;
+        border: none;
+        transition: 0.5s ease-in-out;
+    }
+    .sticky nav .right-header .button .button-one:hover {
+        background-color: #fff;
+        color: #ff8957;
+        border: none;
+        transition: 0.5s ease-in-out;
+    }
+    header nav .right-header .button .button-one:hover .button-two {
+        background: none;
+        border: 1px solid #ff8957;
+        transition: 0.5s ease-in-out;
+    }
+    header nav .right-header .button .button-two {
+        background: #ff8957;
+    }
+    .sticky nav .right-header .button .button-two {
+        background: #fff;
+        color: #ff8957;
+    }
+    header nav .right-header .button .button-two:hover {
+        background: none;
+        color: #fff;
+        border: 1px solid #ff8957;
+        transition: 0.5s ease-in-out;
+        padding: 4px 9px;
+    }
+    .sticky nav .right-header .button .button-two:hover {
+        background: none;
+        border: 1px solid #fff;
+        transition: 0.5s ease-in-out;
+        padding: 4px 9px;
+    }
+    .main-container .container-three {
+        width: 90%;
+    }
+    /* Donation part */
+    .donation-container {
+        padding: 40px !important;
+    }
+    .donation-container form {
+        padding: 25px 0px 10px 0px;
+    }
+    .donation-container form input {
+        margin-bottom: 10px;
+    }
+    .about-container {
+        padding: 20px;
+        display: grid;
+    }
+    .about-container .left-section {
+        width: 100%;
+        display: grid;
+    }
+    .about-container .right-section {
+        width: 100%;
+        padding: 10px;
+    }
+    .about-container .right-section h2,
+    p {
+        padding: 20px 0px;
+    }
+    .about-container .right-section h2 {
+        text-align: center;
+    }
+    .card-section {
+        padding: 20px;
+    }
+    .cards {
+        display: grid;
+        padding: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+    .card {
+        width: 340px;
+        margin-top: 20px;
+    }
+    .who-section .container {
+        display: grid;
+    }
+    .who-section .container .left-sec {
+        width: 100%;
+    }
+    .who-section .container .right-div {
+        width: 100%;
+    }
+    .who-section .container .right-div .up-pic {
+        left: 90%;
+    }
+    .who-section .container .right-div .down-pic {
+        left: 0%;
+    }
+    .register {
+        padding: 25px;
+    }
+    .reg-container {
+        display: grid;
+    }
+    .reg-container .left-reg {
+        width: 100%;
+    }
+    .reg-container .right-reg {
+        width: 100%;
+        margin-top: 50px;
+        padding: 0px;
+    }
+    .reg-container .right-reg p {
+        padding: 15px 0px;
+    }
+    .reg-container form {
+        padding: 0px;
+    }
+    .reg-container form input {
+        width: 100%;
+        margin-top: 15px;
+    }
+    .senior-section {
+        padding: 20px;
+    }
+    .senior-container {
+        display: grid;
+        width: 100%;
+    }
+    .senior-container .left-container {
+        width: 100%;
+        padding: 100px;
+    }
+    .senior-container .right-container {
+        width: 100%;
+        position: relative;
+        margin-top: 250px;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    .main-container {
+        text-align: center;
+        padding: 50px;
+    }
+}
+
+
+/* @media screen and (max-height: 450px) {
+    .left-header {
+    padding-top: 15px;
+    }
+    .main-container .container-three {
+    width: 100%;
+    }
+    /* banner-decription */
+
+
+/* } */
+
+@media screen and (max-width: 450px) {
+    #message-icon {
+        left: 85%;
+        top: 93%;
+    }
+    #message-icon .fa-facebook-messenger {
+        font-size: 40px;
+    }
+    .main-container {
+        padding: 150px 20px;
+    }
+    .main-container .container-one h1 {
+        font-size: 40px;
+        padding: 30px 0px 0px 0px;
+        text-align: center;
+    }
+    .main-container .container-one h2 {
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+    }
+    .main-container .container-one h2 span {
+        font-size: 20px !important;
+        line-height: 30px;
+    }
+    .main-container .container-one P {
+        text-align: center;
+        font-size: 13px !important;
+    }
+    .main-container .container-two {
+        align-items: center;
+        text-align: center;
+    }
+    .main-container .container-three {
+        width: 100%;
+        justify-content: space-around !important;
+    }
+    /* Banner end */
+    /* Donation part */
+    .donation-container {
+        padding: 40px !important;
+    }
+    .donation-container form {
+        padding: 25px 0px 10px 0px;
+    }
+    .donation-container form input {
+        margin-bottom: 10px;
+        width: 90%;
+    }
+    .about-container {
+        padding: 20px;
+        display: grid;
+        justify-items: center;
+    }
+    .about-container .left-section {
+        width: 95%;
+        display: grid;
+    }
+    .about-container .right-section {
+        width: 100%;
+        padding: 10px;
+    }
+    .about-container .right-section h2,
+    p {
+        padding: 20px 0px;
+    }
+    .about-container .right-section h2 {
+        text-align: center;
+    }
+    .card-section {
+        padding: 20px;
+    }
+    .cards {
+        display: grid;
+        padding: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+    .card {
+        width: 340px;
+        margin-top: 20px;
+    }
+    .who-section {
+        padding: 50px 10px 0px 10px;
+    }
+    .who-section .container {
+        display: grid;
+        padding: 0px 0px 60px 0px;
+    }
+    .who-section .container .left-sec {
+        width: 100%;
+        padding: 30px;
+    }
+    .who-section .container .right-div {
+        width: 100%;
+        top: 70%;
+        padding: 0px;
+    }
+    .who-section .container .right-div .up-pic {
+        left: 63%;
+        top: -90%;
+        width: 30%;
+        padding: 5px;
+        /* display: grid;
+    justify-items: center;
+    text-align: center; */
+    }
+    .who-section .container .right-div:hover .up-pic {
+        left: 70%;
+        top: -90%;
+        transition: .5s;
+    }
+    .who-section .container .right-div .up-pic img {
+        width: 40px;
+    }
+    .who-section .container .right-div .up-pic p {
+        left: 0%;
+        font-size: 10px;
+        width: 100%;
+    }
+    .who-section .container .right-div .up-pic h1 {
+        font-size: 18px;
+        padding: 0px;
+    }
+    .who-section .container .right-div .middle-pic {
+        width: 70%;
+        height: 250px;
+        left: 15%;
+    }
+    .who-section .container .right-div .down-pic {
+        left: 10%;
+        top: 10%;
+        padding: 10px;
+    }
+    .donate-btn a {
+        padding: 5px 10px;
+        background-color: #ff8957;
+        color: #fff;
+        border-radius: 5px;
+    }
+    .counting {
+        width: 100%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .counting .count {
+        width: 100%;
+        margin-top: 10px;
+        text-align: center;
+        padding: 0px 80px;
+    }
+    .counting .count .logo-do img {
+        width: 50px;
+        height: 50px;
+    }
+    .counting .count .counts .num {
+        padding: 0px 0px;
+        font-size: 18px;
+        font-weight: lighter;
+    }
+    .counting .count .counts p {
+        padding: 0px 0px;
+        font-size: 18px;
+        font-weight: lighter;
+    }
+    .donate-btn {
+        margin-left: 0px;
+        width: 100%;
+        text-align: center;
+    }
+    .donate-btn a {
+        padding: 12px 25px;
+    }
+    .senior-container .left-container {
+        width: 100%;
+        padding: 0px 40px;
+        font-weight: lighter;
+    }
+    .senior-container .right-container {
+        margin-top: 250px;
+    }
+    .senior-container .right-container .card-conone {
+        height: 300px;
+    }
+    .senior-container .right-container .card-contwo {
+        height: 200px;
+    }
+    .senior-container .right-container .card-conthree {
+        height: 130px;
+    }
+    .blog-section {
+        padding: 250px 50px;
+        text-align: center;
+        display: none;
+    }
+    .map-section {
+        padding: 200px 50px;
+    }
+    .stand {
+        display: grid;
+        padding: 28px;
+    }
+    .stand .stand-right {
+        width: 100%;
+        text-align: center;
+    }
+    .stand .stand-left {
+        width: 100%;
+        padding: 30px 0px;
+    }
+    .satnd .stand-right a {
+        padding: 8px 10px;
+        font-size: 10px;
+    }
+    footer .first-footer {
+        padding: 60px;
+        display: grid;
+    }
+    footer .first-footer .one .peragra p {
+        padding: 0;
+    }
+    footer .first-footer .part {
+        width: 100%;
+        padding: 0;
+    }
+    footer .first-footer .two {
+        display: grid;
+        justify-content: start;
+    }
+    footer .first-footer .three .register-btn {
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    footer .last-footer .rf p {
+        padding: 0px;
+    }
+    footer .last-footer {
+        display: grid;
+        padding: 10px;
+        justify-content: space-evenly;
+    }
+    .stand .stand-right .btn-two,
+    .stand .stand-right .btn-one {
+        padding: 5px 10px;
+    }
+}

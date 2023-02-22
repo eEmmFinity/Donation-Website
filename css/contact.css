@@ -1,0 +1,14 @@
+.box {
+    text-align: left !important;
+    box-shadow: none !important;
+}
+
+iframe {
+    width: 100% !important;
+}
+
+@media screen and (max-width: 450px) {
+    iframe {
+        width: 350px !important;
+    }
+}

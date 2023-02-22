@@ -1,0 +1,58 @@
+@media only screen and (max-width:850px) {
+    .container {
+        padding: 100px 20px 20px 20px;
+    }
+    .container .heading {
+        font-size: 25px;
+    }
+    .container .box-container {
+        grid-template-columns: 2fr;
+    }
+    .container .box-container .box .content p {
+        font-size: 13px;
+    }
+    .sticky nav .left-header ul li a {
+        font-size: 12px;
+        color: #fff;
+    }
+    header nav .right-header .button .button-one {
+        border: 1px solid #ff8957;
+        color: #000;
+        background: none;
+    }
+    header nav .right-header .button .button-two:hover {
+        color: #000;
+    }
+    .openbtn {
+        color: #000;
+    }
+}
+
+@media only screen and (max-width:700px) {}
+
+@media screen and (max-width: 450px) {
+    .container {
+        padding: 100px 20px 20px 20px;
+    }
+    .container .heading {
+        font-size: 25px;
+    }
+    .container .box-container {
+        grid-template-columns: 1fr;
+    }
+    .container .box-container .box .content p {
+        font-size: 13px;
+    }
+    .sticky nav .left-header ul li a {
+        font-size: 12px;
+        color: #fff;
+    }
+    header nav .right-header .button .button-one {
+        border: 1px solid #ff8957;
+        color: #000;
+        background: none;
+    }
+    header nav .right-header .button .button-two:hover {
+        color: #000;
+    }
+}

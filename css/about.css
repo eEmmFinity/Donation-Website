@@ -1,0 +1,9 @@
+ .about-container {
+     padding: 100px;
+ }
+ 
+ @media screen and (max-width: 450px) {
+     .about-container {
+         padding: 100px 20px;
+     }
+ }
